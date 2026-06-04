@@ -1,0 +1,10 @@
+# Mengabaikan folder build Rust
+**/target/
+
+# Mengabaikan file ISO dan log QEMU
+*.iso
+qemu_output.txt
+qemu_serial.log
+
+# Mengabaikan folder download mentah limine jika diperlukan (opsional)
+# limine-dl/

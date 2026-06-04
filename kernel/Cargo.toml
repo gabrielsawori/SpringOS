@@ -1,0 +1,15 @@
+[package]
+name = "kernel"
+version = "0.1.0"
+edition = "2021"
+authors = ["SpringOS Team"]
+
+[dependencies]
+# Nanti kita akan menambahkan crate 'limine' di sini untuk parsing informasi bootloader
+
+[profile.dev]
+# Kernel tidak bisa menangani 'stack unwinding' bawaan, jadi jika terjadi error fatal, kernel langsung berhenti (abort)
+panic = "abort"
+
+[profile.release]
+panic = "abort"
